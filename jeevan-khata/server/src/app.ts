@@ -9,8 +9,8 @@ const app = express();
 
 app.use(cors({
     credentials: true,
-    // origin: "http://3.6.178.87/", 
-    origin: "http://localhost:3000", 
+    origin: "http://13.233.184.159/", 
+    // origin: "http://localhost:3000", 
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   }));
 

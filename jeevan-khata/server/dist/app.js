@@ -11,8 +11,8 @@ const router_1 = __importDefault(require("./controllers/router"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
     credentials: true,
-    // origin: "http://3.6.178.87/", 
-    origin: "http://localhost:3000",
+    origin: "http://13.233.184.159/",
+    // origin: "http://localhost:3000", 
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
 }));
 app.use(express_1.default.json({ limit: '25kb' }));

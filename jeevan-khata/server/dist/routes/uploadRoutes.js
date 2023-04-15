@@ -10,11 +10,8 @@ const aws_sdk_1 = __importDefault(require("aws-sdk"));
 const router = express_1.default.Router();
 // configure the AWS SDK with your S3 credentials
 aws_sdk_1.default.config.update({
-    // accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    // secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    // region: process.env.AWS_REGION
-    accessKeyId: "AKIASR77BQMICZATCLPV",
-    secretAccessKey: "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",
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     region: ""
 });
 const s3 = new aws_sdk_1.default.S3();

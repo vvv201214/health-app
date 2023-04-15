@@ -24,8 +24,7 @@ exports.getUploads = ((req, res, next) => __awaiter(void 0, void 0, void 0, func
         const uploadedFiles = req.files;
         const fileUploadPromises = uploadedFiles.map((file) => __awaiter(void 0, void 0, void 0, function* () {
             const uploadParams = {
-                Bucket: "jeevan-khata-test",
-                // Bucket: process.env.AWS_BUCKET_NAME,
+                Bucket: process.env.AWS_BUCKET_NAME,
                 Key: file.originalname,
                 Body: file.buffer,
             };
